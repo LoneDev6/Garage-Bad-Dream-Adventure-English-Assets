@@ -1,0 +1,227 @@
+--
+-- –{“c^–{“cÔ—¼
+-- Last Update: 98/10/23
+-- --------------------------------------------------
+
+-- --------------------ƒL[ƒ[ƒh•Ê--------------------
+-- ----------ƒI[ƒvƒjƒ“ƒO----------
+#Index 'ƒI[ƒvƒjƒ“ƒO 01'
+Dummy: Dumbass, depending on the setting, shows a different message.
+
+-- ----------ƒvƒVƒP----------
+#Index 'ƒvƒVƒP 01'
+#InsPart #‹¤’Ê‚P
+Honda: I don't want any White Gas House stamps.
+They don't do any good in the end.
+If you want my stuff, you gotta trade me crabs or frogs.@
+Want to buy something?
+~“®ì~ [#setFlag,[#event–{“c.ƒvƒVƒP:TRUE]]
+#InsPart #‹¤’Ê‚Q
+
+#Index 'ƒvƒVƒP 02'
+#InsPart #‹¤’Ê‚P
+Honda: Crabs are caught in traps.
+See that red winch on the side of the tracks?
+You can attach a trap on there.@
+If you want stamps, you'll just end up exchanging
+your crabs or frogs for them. They're the same thing....
+Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'ƒvƒVƒP 03'
+#InsPart #‹¤’Ê‚P
+Honda: What? Psyche?@
+Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'ƒvƒVƒP 04'
+#InsPart #‹¤’Ê‚P
+Honda: You going to buy anything?
+#InsPart #‹¤’Ê‚Q
+
+-- ----------ÀŒ±H–[----------
+#Index 'ÀŒ±H–[ 01'
+#InsPart #‹¤’Ê‚P
+Honda: Hmph. The Laboratory is an evil place.
+Ever since the freak show,
+Nothing has really changed.@
+Identity fluid is just fake crabmeat. It's heresy.
+Don't you agree, son?
+By the way, you wanna buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'ÀŒ±H–[ 02'
+#InsPart #‹¤’Ê‚P
+Honda: Would you like to buy something?
+#InsPart #‹¤’Ê‚Q
+
+-- ----------Šy•ˆ----------
+#Index 'Šy•ˆ 01'
+#InsPart #‹¤’Ê‚P
+Honda: Hey son. Do you know who Vulcaniro is?
+Yeah. He has a place just north of here.
+He's the one who invented the music box. He's a good guy.@
+Unlike Rao and Ain.
+They're just using what Vulcaniro created.
+It all started with one sheet of music.@
+That little music box that was Vulcaniro's...
+I would never have thought that it had such disgusting power.
+Though I'm sure he doesn't know.... Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'Šy•ˆ 02'
+#InsPart #‹¤’Ê‚P
+Honda: A driving device, though same with anything else,
+is all about balance. You don't want the frame to be too strong,
+or the axle either, it'll wear you out.@
+Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'Šy•ˆ 03'
+#InsPart #‹¤’Ê‚P
+Honda: A good driving device has a bearing that rolls in grease.
+It's like drinking fine White Gas, it needs to roll around nice.
+Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'Šy•ˆ 04'
+#InsPart #‹¤’Ê‚P
+Honda: Would you like to buy something?
+#InsPart #‹¤’Ê‚Q
+
+-- ----------‰B‚³‚ê‚½Œf¦”Â----------
+#Index '‰B‚³‚ê‚½Œf¦”Â 01'
+#InsPart #‹¤’Ê‚P
+Honda: I don't know anything about billboards.
+Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index '‰B‚³‚ê‚½Œf¦”Â 02' -- ‘O‰ñ‚Ì‘I‘ğ‚ÅYes‚Ìê‡
+#InsPart #‹¤’Ê‚P
+Honda: Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+-- ----------ƒvƒVƒP‚Ì–²“ú‹L----------
+#Index 'ƒvƒVƒP‚Ì–²“ú‹L 01'
+#InsPart #‹¤’Ê‚P
+Honda: .... You buying anything?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'ƒvƒVƒP‚Ì–²“ú‹L 02'
+#InsPart #‹¤’Ê‚P
+Honda: Would you like to buy something?
+#InsPart #‹¤’Ê‚Q
+
+-- ----------‘D----------
+#Index '‘D 01'
+#InsPart #‹¤’Ê‚P
+Honda: Yeah, I used to tinker with boats too.
+The rides in the rotary therapy unit were built from boats.
+I used nearly all of the parts.@
+I think they're all gone now...
+Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index '‘D 02'
+#InsPart #‹¤’Ê‚P
+Honda: Want to buy something? 
+#InsPart #‹¤’Ê‚Q
+
+-- ----------ƒJƒQ----------
+#Index 'ƒJƒQ 01'
+#InsPart #‹¤’Ê‚P
+Honda: A shadow? Sorry, I don't like to talk about that stuff.
+But I don't hate you.
+I just prefer to think about machines.@
+.........Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+#Index 'ƒJƒQ 02'
+#InsPart #‹¤’Ê‚P
+Honda: Would you like to buy something?
+#InsPart #‹¤’Ê‚Q
+
+-- ----------ƒ„ƒ“----------
+#Index 'ƒ„ƒ“ 01'
+#InsPart #‹¤’Ê‚P
+Honda: .......Want to buy something?
+#InsPart #‹¤’Ê‚Q
+
+-- ----------ƒ„ƒ“‚Ì€Œã----------
+#Index 'ƒ„ƒ“‚Ì€Œã 01'
+~ğŒ~ [#Item:["‘äÔ•S®","=",0]]
+~ˆÚ“®~ #”ƒ‚¦‚é•¨‚ªc‚Á‚Ä‚¢‚éê‡
+
+#Message #‘äÔ•S®‚ğ‚Á‚Ä‚¢‚éê‡
+Honda: There aren't any other machines that
+need my cart upgrades anymore.....
+~“®ì~ [#setFlag,[#event–{“c.”„‚èØ‚ê:TRUE]]
+
+#Message #”ƒ‚¦‚é•¨‚ªc‚Á‚Ä‚¢‚éê‡
+Honda: .......Want to buy something?
+~“®ì~ [#MsgCountOperation,(-1)]
+#InsPart #‹¤’Ê‚Q
+
+
+#Index 'ƒ„ƒ“‚Ì€Œã 02'
+Honda: There's nothing left to worry about.
+I fished too once in a while.
+
+#Index 'ƒ„ƒ“‚Ì€Œã 03'
+Honda: Fishing is good.
+
+#Index 'ƒ„ƒ“‚Ì€Œã 04'
+Honda: Nessan is happy.
+What's more, I've started fishing again.
+It's a bit ironic.
+
+#Index 'ƒ„ƒ“‚Ì€Œã 05'
+Honda: Maybe I'll try developing a reel this time......
+
+#Index 'ƒ„ƒ“‚Ì€Œã 06'
+Honda: Fishing isn't so bad.....
+
+-- --------------------‹¤’Ê‚P--------------------
+#Part #‹¤’Ê‚P
+~ğŒ~ [#Item:["‘äÔ•S®","=",0]]
+~ˆÚ“®~ #”ƒ‚¦‚é•¨‚ªc‚Á‚Ä‚¢‚éê‡
+
+#Message #‘äÔ•S®‚ğ‚Á‚Ä‚¢‚éê‡
+I don't have any more carts to sell you.
+~“®ì~ [#setFlag,[#event–{“c.”„‚èØ‚ê:TRUE]]
+
+#Message #”ƒ‚¦‚é•¨‚ªc‚Á‚Ä‚¢‚éê‡
+
+-- --------------------‹¤’Ê‚Q--------------------
+#Part #‹¤’Ê‚Q
+~‘I‘ğ~ [#‚x‚…‚“‚Ìê‡,#‚m‚‚Ìê‡]
+
+#Message #‚x‚…‚“‚Ìê‡
+My upgrades can improve your fuel economy. Which one do you want?
+~“®ì~ #showProductMenu
+~Ú‘±~ #”ƒ‚¢•¨‚µ‚½ê‡
+
+#Message #‚m‚‚Ìê‡
+~“®ì~ #MsgDone
+
+#Message #”ƒ‚¢•¨‚µ‚½ê‡
+~“®ì~ [#getItemHiddenly,[["$$‘äÔ$$",1]]]
+~“®ì~ #hide
+~Ú‘±~ #Ÿ‚Ö
+
+#Message -- ˆê‚Â‘O‚Ì‘±‚«
+I got the $$‘äÔ$$ and had it attached to my body.
+~“®ì~ #show
+~Ú‘±~ #Ÿ‚Ö
+
+#Message -- ˆê‚Â‘O‚Ì‘±‚«
+~ğŒ~ [#SysVal:[#ƒL[ƒ[ƒh,"<",9]]
+~“®ì~ #MsgDone
+
+#Message #ƒL[ƒ[ƒh‚ªƒ„ƒ“ˆÈ~
+~ğŒ~ [#Item:["‘äÔ•S®","=",0]]
+~“®ì~ #MsgDone
+
+#Message #”ƒ‚¦‚é•¨‚ªc‚Á‚Ä‚¢‚È‚¢ê‡
+-- ˆÚ“®‰Â”\‚É‚·‚éi’Ş‚è‚És‚­‚æ‚¤‚É‚È‚éj
+~“®ì~ [#setFlag,[#event–{“c.”„‚èØ‚ê:TRUE]]

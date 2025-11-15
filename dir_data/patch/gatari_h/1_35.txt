@@ -1,0 +1,42 @@
+--
+-- ƒKƒ^ƒŠ’Ş‚è•]‰¿^ƒKƒ^ƒŠ‚Ì¬‰®
+-- Last Update: 98/09/07
+-- --------------------------------------------------
+
+Gatari: Did you catch anything?
+~‘I‘ğ~ [#Yes,#No]
+
+#Message #Yes
+~ğŒ~ [#Direct:[$$Š^í•Ê$$,"=",0]]
+Good for you.
+
+#Message -- •’ÊíˆÈŠO
+~ğŒ~ [#Direct:[$$Š^í•Ê$$,"=",1]]
+That's impressive. $$Š^–¼$$ is a rare one.
+
+#Message -- Šó­íˆÈŠO
+~ğŒ~ [#Direct:[$$Š^í•Ê$$,">",2]]
+~ˆÚ“®~ #’´’´Šó­í
+
+#Message -- ’´’´Šó­íˆÈŠO
+~ğŒ~ [#Direct:[$$‰‚ß‚Ä•]‰¿$$,"=",TRUE]]
+Well, look at that. It's $$Š^–¼$$.
+I've never seen a real one before!
+
+#Message -- ‚Q‰ñ–ÚˆÈ~
+It's quite a feat.
+You caught $$Š^–¼$$ again, huh?
+
+#Message #’´’´Šó­í
+I can't believe it. A talking frog?
+You must have had a dream after all that fishing.
+
+#Message #No
+That's too bad.
+
+
+-- ƒƒ‚F
+-- i’‚Pj$$Š^–¼$$‚Í’Ş‚Á‚½’†‚Åˆê”ÔŠó­‰¿’l‚Ì‚‚¢Š^‚Ì–¼‘O‚ª“ü‚éB
+--         ’Ş‚ê‚È‚©‚Á‚½ê‡‚Í’uŠ·‚³‚ê‚È‚¢B
+-- i’‚Qj$$Š^í•Ê$$‚Í’Ş‚Á‚½’†‚Åˆê”ÔƒOƒŒ[ƒh‚Ì‚‚¢Š^‚Ìí•Ê‚ª“ü‚éB
+--         ’Ş‚ê‚È‚©‚Á‚½ê‡‚Íh•’Êíh‚Æ‚·‚éB

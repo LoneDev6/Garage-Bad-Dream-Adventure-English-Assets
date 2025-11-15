@@ -1,0 +1,1 @@
+---- …–å-- Last Update: 98/09/18-- --------------------------------------------------Open the flood gate?~‘I‘ğ~ [#Yes,#No]#Message #Yes~“®ì~ [#setFlag,[#event…–å:TRUE]]~“®ì~ #runWaterGate#Message #No~“®ì~ #MsgDone

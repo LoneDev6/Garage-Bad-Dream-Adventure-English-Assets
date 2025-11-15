@@ -1,0 +1,1 @@
+---- ガタリ（「容子」の説明）／ガタリの小屋-- Last Update: 98/09/07-- --------------------------------------------------Gatari: Yeah. Ah, that's Yoko.If you feed her crabs or frogs, she can refuel your White Gas.~動作~ [#setFlag,[#eventガタリ.容子の説明:TRUE]]

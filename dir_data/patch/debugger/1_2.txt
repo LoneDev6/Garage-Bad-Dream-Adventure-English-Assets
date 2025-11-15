@@ -1,0 +1,204 @@
+Fish Hook No. 0
+Fish Hook No. 1
+Fish Hook No. 2
+Fish Hook No. 3
+Fish Hook No. 4
+Fish Hook No. 8
+Fish Hook No. 10
+Fish Hook No. 100
+Fish Hook No. 100 Kai
+Pot Crab
+Tachibasami
+Sabinemodoki
+Frog Deceiver
+Demon Crab
+Gedou
+Rust Frog
+Green Rust Frog
+Male Kyusui
+Albino Male Kyusui
+Male Yogen
+Vermilion Yogen
+Rainbow Yogen
+Horned Frog
+Albino Horned Frog
+Nedamashi
+Albino Nedamashi
+Ichikaku
+Albino Ichikaku
+Sashiguchi
+Albino Sashiguchi
+Heraguchi
+Albino Heraguchi
+Crab-Eater
+Albino Crab-Eater
+Tsutsumimi
+Albino Tsutsumimi
+Big Ichikaku
+Black Big Ichikaku
+Male Stye
+Albino Male Stye
+Female Stye
+Albino Female Stye
+Female Kyusui
+Albino Female Kyusui
+Big Crab-Eater
+Albino Big Crab-Eater
+Suihou
+Albino Suihou
+Wansui (hidden)
+None
+Gedou Fishing Info
+Rust Frog Fishing Info
+Horned Frog Fishing Info
+Ichikaku Fishing Info
+Big Ichikaku Fishing Info
+Heraguchi Fishing Info
+Crab-Eater Fishing Info
+Big Crab-Eater Fishing Info
+Male Stye Fishing Info
+Female Stye Fishing Info
+Nedamashi Fishing Info
+Male Kyusui Fishing Info
+Female Kyusui Fishing Info
+Sashiguchi Fishing Info
+Tsutsumimi Fishing Info
+Suihou Fishing Info
+Yogen Fishing Info
+Wansui Fishing Info
+Adaptation Fluid
+High-Grade Adaptation Fluid
+Premium Adaptation Fluid
+Red Crab Miso Can
+Blue Crab Miso Can
+Round Frog Oil Can
+Square Frog Oil Can
+Portable White Gas
+Gold Bait Seal
+Silver Bait Seal
+Small Trap
+Medium Trap
+Large Trap
+Extra Large Trap
+Silver Dish
+Blower
+Large Blower
+Sewage Pipe
+Lamp
+Small Reserve Tank
+Medium Reserve Tank
+Large Reserve Tank
+Extra Large Reserve Tank
+Large-Caliber Carburetor
+Manifold
+Reinforced Valve
+Turbocharger
+Reinforced Frame
+Oil Cooler
+Bore-Up Kit
+Reinforced Crank
+4-Valve Head
+Jet Set
+Mechanical Fuel Injection System
+Manifold with Chamber
+Cart No. 1
+Cart No. 2
+Cart No. 3
+Cart No. 100
+ShenÅfs Letter
+ShenÅfs Memo 1
+ShenÅfs Memo 2
+ShenÅfs Memo 3
+ShenÅfs Memo 4
+ShenÅfs Memo 5
+Broken Music Box
+Music Box
+Fishing Rod
+Sealed Box
+Old Blueprint
+PsycheÅfs Letter
+Telescope
+Room 8 Key
+Nitro
+JuiceÅfs Dream Diary
+LuÅfs Wing Screw
+Protoform
+Dowsing Compass
+White Gas House Chronicle
+Sealed Box Cipher
+ShenÅfs Diary
+Sewage Research Report
+Shadow Analysis
+YanÅfs Dream Diary
+Resonance Plate
+MediciÅfs Room Key
+LaoÅfs Room Key
+Water Tower Key
+Silver Screen Key
+Rebirth Stone
+Stage 0 Parts List
+Shadow Murder Show
+Beginning Slide
+Rocking Horse Slide
+YanÅfs Slide
+LuÅfs Slide
+ChenÅfs Slide
+Cave of Engravings Slide
+Sheep Song Sheet Music
+VulcaniroÅfs Sheet Music
+VisÅfs Sheet Music
+TorlopÅfs Sheet Music
+GatariÅfs Sheet Music
+RuÅfs Treasure
+Noise Score
+Freak Show Red
+Freak Show Blue
+Twin-Headed Machine Blue
+Twin-Headed Machine Gold
+Wonders of the World (Michiyo, Late)
+Wonders of the World (Michiyo, Early)
+Wonders of the World (Reiko, Red)
+Wonders of the World (Reiko, Purple)
+Wonders of the World (Shan, Red)
+Wonders of the World (Shan, Purple)
+Shadow Murder Show Red
+Shadow Murder Show Blue
+Anti-Adaptation Show (Late)
+Anti-Adaptation Show (Early)
+Frog Oil Label Red
+Frog Oil Label Black
+Crab Miso Label Red
+Crab Miso Label Blue
+Crab Miso Label Yellow
+Fire Show Gold-Red
+Fire Show Green
+Fire Show Purple
+Happy Hour Red
+Happy Hour Orange
+Test Print 1
+Test Print 2
+Test Print 3
+White Gas House Stamp (System)
+Boat (System)
+Your Room: 120 Stamps (Hidden)
+Your Room: 10 Fish Hook No. 1 (Hidden)
+Your Room: Music Box (Hidden)
+Water Tower: Red Crab Miso Can (Hidden)
+Water Tower: Twin-Headed Machine Blue A (Hidden)
+Water Tower: Twin-Headed Machine Blue B (Hidden)
+Water Tower: Anti-Adaptation Show (Late) (Hidden)
+Water Tower: Test Print 1A (Hidden)
+Water Tower: Test Print 1B (Hidden)
+Water Tower: Wonders of the World (Shan, Red) (Hidden)
+Water Tower: Fish Hook No. 4 (Hidden)
+Water Tower: Fish Hook No. 2 (Hidden)
+Water Tower: Medium Trap (Hidden)
+Room 8: Large Trap (Hidden)
+LuÅfs Room: 3-Pack of Hooks (Hidden)
+LuÅfs Room: Large Trap (Hidden)
+LuÅfs Room: Medium Trap (Hidden)
+YanÅfs Secret Room: 10 Fish Hook No. 0 (Hidden)
+YanÅfs Secret Room: 10 Fish Hook No. 100 (Hidden)
+YanÅfs Secret Room: 10 Fish Hook No. 10 (Hidden)
+Back of Shop No. 2: 10,000 Stamps (Hidden)
+Honda Factory: 200 Stamps (Hidden)

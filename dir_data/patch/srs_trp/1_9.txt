@@ -1,0 +1,137 @@
+--
+-- トーロップ／清流荘
+-- Last Update: 98/10/20
+-- --------------------------------------------------
+
+-- --------------------キーワード別--------------------
+-- ----------オープニング----------
+#Index 'オープニング 01'
+Dummy: Dumbass, depending on the setting, shows a different message.
+
+-- ----------プシケ----------
+#Index 'プシケ 01'
+Torlop: What is it? Psyche? Who's that?
+
+#Index 'プシケ 02'
+Torlop: I collect print materials, as you can see.
+Prints are good. They're not scary, and they don't move around.
+
+#Index 'プシケ 03'
+Torlop: What is it? Are you jealous?
+
+-- ----------実験工房----------
+#Index '実験工房 01'
+Torlop: Laboratory? I'm not interested.
+
+#Index '実験工房 02'
+Torlop: Aren't my posters nice? Lots of colors, right?
+I'll get more of them. More and more.
+This place is going to be a lot more full eventually.
+
+#Index '実験工房 03'
+Torlop: You must really be jealous....
+
+-- ----------楽譜----------
+#Index '楽譜 01'
+Torlop: A poster printed on the sheet music of Lament of the Lamb?
+I don't have it, but I've been looking for it.
+~接続~ #次へ
+
+ -- 一つ前の続き（Yesになるまで繰り返し）
+#Message #Ｎｏの場合
+The posters are often on billboards.
+I'm told that some of them have been hidden behind the walls.@
+I'm sure Miya, the construction worker, would know that.
+He can't talk. Do you understand?
+~選択~ [#Ｙｅｓの場合,#Ｎｏの場合]
+
+#Message #Ｙｅｓの場合
+That's right. If you see any posters, bring them to me.
+Come on, I'll make it worth your time.
+~動作~ [#setFlag,[#eventトーロップ.楽譜:TRUE]]
+
+-- ----------隠された掲示板----------
+#Index '隠された掲示板 01'
+#Message #Repeat
+Torlop: Found any posters for me lately?
+#InsPart #交換メニュー
+
+#Index 'プシケの夢日記 01'
+#Message #Repeat
+Torlop: Found any posters for me lately?
+#InsPart #交換メニュー
+
+-- ----------船----------
+#Index '船 01'
+#Message #Repeat
+Torlop: What have you found?
+#InsPart #交換メニュー
+
+-- ----------カゲ----------
+#Index 'カゲ 01'
+Torlop: Shadow? Hahaha... don't ask me about that.
+You'll ruin everything. Ha ... ha ... ha ...
+~接続~ #次へ
+
+#Message #Repeat
+So... have you found anything interesting?
+#InsPart #交換メニュー
+
+#Index 'カゲ 02'
+#Message #Repeat
+So... have you found anything interesting?
+#InsPart #交換メニュー
+
+-- ----------ヤン----------
+#Index 'ヤン 01'
+Torlop: It's a bit noisy.
+Everyone's all shaken up.
+I don't know what's wrong with them. I don't feel anything.
+~接続~ #次へ
+
+#Message #Repeat
+Did you find anything by the way?
+#InsPart #交換メニュー
+
+#Index 'ヤン 02'
+#Message #Repeat
+Torlop: Have you found anything for me?
+#InsPart #交換メニュー
+
+-- シナリオでは未定義
+#Index エンディング
+#Message #Repeat
+Torlop: Have you found anything for me?
+#InsPart #交換メニュー
+
+-- シナリオでは未定義
+#Index ヤンの死後
+#Message #Repeat
+Torlop: Have you found anything for me?
+#InsPart #交換メニュー
+
+
+-- --------------------交換メニュー--------------------
+#Part #交換メニュー
+~選択~ [#Yes:#Ｙｅｓの場合１,#No:#キャンセル]
+
+#Message #Ｙｅｓの場合１
+Which one do you want to trade?
+~動作~ #showExchangeDlg
+~接続~ #交換メニュー終了後
+-- ダイアログキャンセル時は次へ
+
+#Message #キャンセル
+If you find a poster, please bring it to me.
+
+#Message #交換メニュー終了後
+So, $$ポスター$$ huh. I can trade it for $$アイテム$$.
+~選択~ [#Ｙｅｓの場合２,#Ｎｏの場合]
+
+#Message #Ｙｅｓの場合２
+~動作~ #exchangeDone
+~接続~ #Repeat
+
+#Message #Ｎｏの場合
+If you don't want to, that's fine.
+~接続~ #Repeat

@@ -1,0 +1,1 @@
+---- 記録／水門-- Last Update: 98/10/13-- ---------------------------------------------------- 水門駆動後に表示される。#Message #記録Keep a record?~選択~ [#Yes,#No]#Message #Yes~動作~ #saveGame#Message #No~動作~ #goOut

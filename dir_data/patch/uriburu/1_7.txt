@@ -1,0 +1,134 @@
+--
+-- ウリブール／白瓦斯屋壱号店／表
+-- Last Update: 98/10/20
+-- --------------------------------------------------
+
+-- --------------------キーワード別--------------------
+#Index オープニング
+Dummy: Dumbass, depending on the setting, shows a different message.
+
+#Index プシケ
+#InsPart #初期動作
+Uriburu: One refuel is $$支払い枚数.全角$$ stamps. Want a refill?
+#InsPart #共通
+
+#Index 実験工房
+#InsPart #初期動作
+Uriburu: One refuel costs $$支払い枚数.全角$$ stamps. Want a refill?
+#InsPart #共通
+
+#Index 楽譜
+#InsPart #初期動作
+Uriburu: One refuel costs $$支払い枚数.全角$$ stamps. Want a refill?
+#InsPart #共通
+
+#Index 隠された掲示板
+#InsPart #初期動作
+Uriburu: $$支払い枚数.全角$$ stamps. Want me to fill it up?
+#InsPart #共通
+
+#Index プシケの夢日記
+#InsPart #初期動作
+Uriburu: Hey. You want a fill-up? $$支払い枚数.全角$$ stamps.
+#InsPart #共通
+
+#Index 船
+#InsPart #初期動作
+Uriburu: Want me to fill it up? $$支払い枚数.全角$$ stamps.
+#InsPart #共通
+
+#Index カゲ
+#InsPart #初期動作
+#InsPart #雌が自宅にいるか確認
+Uriburu: Want a fill-up? $$支払い枚数.全角$$ stamps.
+#InsPart #共通
+
+#Index ヤン
+#InsPart #初期動作
+#InsPart #雌が自宅にいるか確認
+Uriburu: Want a fill-up? $$支払い枚数.全角$$ stamps.
+#InsPart #共通
+
+#Index ヤンの死後
+#InsPart #初期動作
+#InsPart #雌が自宅にいるか確認
+Uriburu: Want a fill-up? $$支払い枚数.全角$$ stamps.
+#InsPart #共通
+
+-- --------------------初期動作--------------------
+#Part #初期動作
+~条件~ [#SysVal:[#event給油の説明,"=",TRUE]]
+-- 「給油方法の説明」を聞いている場合
+~移動~ #説明を聞いている場合
+
+-- 「給油方法の説明」を聞いていない場合
+#Message #給油方法の説明
+Uriburu: Do you want to refuel?
+~選択~ [#Ｙｅｓの場合１,#Ｎｏの場合]
+
+#Message #Ｙｅｓの場合１
+You'll always have to pay for a full tank of fuel.
+It doesn't matter how much you have left. That's the rule.
+Your head-tank capacity is $$タンク容量.全角$$合 (capacity units),
+so one refuel costs $$支払い枚数.全角$$ stamps.
+Is that okay?
+~移動~ #共通
+
+ -- 「給油方法の説明を聞いている場合
+#Message #説明を聞いている場合
+-- 実際には各キーワード毎のメッセージ
+
+-- --------------------共通--------------------
+#Part #共通
+~移動~ #次へ
+
+#Message  #共通
+~動作~ #showStanpView
+~選択~ [#Ｙｅｓの場合２,#Ｎｏの場合]
+#Message  #Ｎｏの場合
+Come back soon.
+
+#Message #Ｙｅｓの場合２
+~条件~ [#Item:["白瓦斯屋スタンプ","<","$$支払い枚数.半角$$"]]
+-- スタンプが足りない場合
+You don't have enough stamps.
+
+-- スタンプが足りている場合
+#Message #給油
+Thanks. Just go right in and choose your favorite female.
+~動作~ [#getItem,[["白瓦斯屋スタンプ",(-$$支払い枚数.半角$$)]]]
+~動作~ #resetStanpView
+~接続~ #次へ
+
+#Message -- 一つ前の続き
+~動作~ #enterWG1
+
+-- --------------------雌が自宅にきた場合--------------------
+#Part #雌が自宅にいるか確認
+~条件~ [#SysVal:[#eventウリブール表,"=",TRUE]]
+~移動~ #キーワードメッセージへ
+
+#Message -- 一つ前の続き
+~条件~ [#SysVal:[#Locシャン,"=",#自宅]]
+~移動~ #自宅に雌が来ている場合
+
+#Message -- 一つ前の続き
+~条件~ [#SysVal:[#Loc道代,"=",#自宅]]
+~移動~ #自宅に雌が来ている場合
+
+#Message -- 一つ前の続き
+~条件~ [#SysVal:[#Locレイコ,"=",#自宅]]
+~移動~ #自宅に雌が来ている場合
+
+#Message -- 自宅に雌が来ていない場合
+~移動~ #キーワードメッセージへ
+
+#Message #自宅に雌が来ている場合
+Uriburu: Are you sure you want to be in here right now?
+Not that it matters to me or anything...
+Of course you're getting a fill-up, right? That’ll be $$支払い枚数.全角$$ stamps.
+~動作~ [#setFlag,[#eventウリブール表:TRUE]]
+~動作~ [#MsgCountOperation,(-1)]
+~移動~ #共通
+
+#Message #キーワードメッセージへ

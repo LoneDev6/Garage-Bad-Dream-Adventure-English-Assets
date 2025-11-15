@@ -1,0 +1,230 @@
+--
+-- 森脇／マルヤ百貨店
+-- Last Update: 98/10/20
+-- --------------------------------------------------
+
+-- --------------------キーワード別--------------------
+#Index オープニング
+Dummy: Dumbass, depending on the setting, shows a different message.
+
+#Index プシケ
+#InsPart #共通
+
+#Index 実験工房
+#InsPart #共通
+
+#Index 楽譜
+#InsPart #共通
+
+#Index 隠された掲示板
+#InsPart #共通
+
+#Index プシケの夢日記
+#InsPart #共通
+
+#Index 船
+#InsPart #共通
+
+#Index カゲ
+#InsPart #共通
+
+#Index ヤン
+#InsPart #共通
+
+#Index エンディング
+#InsPart #共通
+
+#Index ヤンの死後
+#InsPart #共通
+
+-- --------------------共通--------------------
+#Part #共通
+#Message #入店
+~条件~ [#SysVal:[#チューニング,">",4]]
+~移動~ #ステージ４改造後二回目以降
+
+#Message -- 一つ前の続き
+~条件~ [#SysVal:[#event森脇.挨拶,"=",TRUE]]
+~移動~ #Second
+
+#Message -- 一つ前の続き
+Moriwaki: Oh... A customer....Ah, sorry.
+There aren't many people messing with their bodies these days.@
+If you want me to do tuning, you need to bring the parts yourself.
+This isn't a parts shop, you know.
+I just do tinkering.@
+And you have to go through each Stage in order.
+If you want to take the Stage 2 on the first try...
+You'll have to pay for Stage 1 as well.
+~動作~ [#setFlag,[#event森脇.挨拶:TRUE]]
+~接続~ #ComDlg
+
+#Message #Second
+Moriwaki: Would you like me to do some tuning?
+~移動~ #ComDlg
+
+#Message #ComDlg
+~動作~ [#showComDlg,[#choice:[#買い物メニュー,#説明メニュー,#終了]]]
+~接続~ #ComDlg
+
+-- ----------「買う」を選択した場合----------
+#Message #買い物メニュー
+~動作~ #showStanpView
+~動作~ [#showProductMenu,[#startTuning:#改造開始,#cantAssemble:#部品不足,#cancel:#キャンセル,#cantPay:#スタンプ不足]]
+
+#Message #キャンセル
+~動作~ #closeStanpView
+~移動~ #入店
+
+#Message #改造開始
+~動作~ #resetStanpView
+~動作~ #closeComDlg
+~動作~ #hide
+~動作~ #startTuning
+~接続~ #次へ
+
+#Message -- 一つ前の続き
+My body was modified according to $$チューニング$$
+~動作~ #show
+~接続~ #次へ
+
+#Message -- 一つ前の続き
+#InsPart #リザーブタンクの取り付け
+~条件~ [#SysVal:[#チューニング,">",4]]
+~移動~ #ステージ４改造後
+
+#Message -- 一つ前の続き
+~動作~ #goOut
+
+#Message #ステージ４改造後
+It's been a long time since I've done this much.
+I have to thank you.
+You've got pretty much the best body now.@
+But Rao.... I bet he could do even more....
+......................
+It's a bit frustrating.....
+
+#Message #ステージ４改造後二回目以降
+You still aren't satisfied? There's nothing more I can do.
+
+#Message #部品不足
+You don't have the right parts.
+~接続~ #買い物メニュー
+
+#Message #スタンプ不足
+You don't have enough stamps.
+~接続~ #買い物メニュー
+
+-- ----------「説明」を選択した場合----------
+#Message #説明メニュー
+~動作~ [#showExplainDialog,[#Name:["リザーブタンク取り付け","ステージ１チューニング","ステージ２チューニング","ステージ３チューニング","ステージ４チューニング"],#choice:[#リザーブタンク取り付け,#ステージ１チューニング,#ステージ２チューニング,#ステージ３チューニング,#ステージ４チューニング],#cancel:#入店]]
+
+#Message #リザーブタンク取り付け
+Installing The Reserve Tank
+Increases tank capacity. The fee doesn't depend on the size.
+If you get a larger one, come back here and I'll replace it.
+~接続~ #説明メニュー
+
+#Message #ステージ１チューニング
+Stage 1 Tuning
+By fine-tuning each component, fuel economy is increased.
+At the same time, it will also increase your Identity.
+Also, you'll be able to catch frogs with a stronger pull.@
+Due to the reduced loss of energy in the circulatory system,
+Transmission of your will to your body becomes smoother.
+No particular components are needed.
+~接続~ #説明メニュー
+
+#Message #ステージ２チューニング
+Stage 2 Tuning
+Increases power output as well as fuel economy. To do this,
+you'll need a Large Diameter Vaporizer and an Assembly Tube.
+You can't do this with just one or the other.@
+You will be able to catch even stronger frogs when fishing.
+If you do this you will be able to catch all kinds of frogs.
+~接続~ #説明メニュー
+
+#Message #ステージ３チューニング
+Stage 3 Tuning
+Even further output increase. You'll need three parts for this.
+Supercharger, Reinforced Frame, and Reinforced Valves.
+Fuel economy remains the same, but power and Identity increase.@
+If you want to catch the big frogs, I recommend it....
+~接続~ #説明メニュー
+
+#Message #ステージ４チューニング
+Stage 4 Tuning
+The best capabilities I can give you. You will need...
+An Oil Cooler, a Bore Up Kit, and a Reinforced Crank.@
+If you do that, you should be able to catch some pretty big frogs.
+~接続~ #説明メニュー
+
+-- ----------「出る」を選択した場合----------
+#Message #終了
+#InsPart #リザーブタンクの取り付け
+~動作~ #goOut
+
+-- --------------------リザーブタンクの取り付け--------------------
+#Part #リザーブタンクの取り付け
+~条件~ [#Item:["リザーブタンク特大",">",0],#SysVal:[#リザーブタンク,"<",5]]
+~変数~ [#リザーブタンク:"リザーブタンク特大",#リザーブタンク種別:5,#タンク容量:240]
+~移動~ #取り付けを確認
+
+#Message -- 条件外の場合
+~移動~ #次へ
+
+#Message -- リザーブタンク大の所持を確認
+~条件~ [#Item:["リザーブタンク大",">",0],#SysVal:[#リザーブタンク,"<",4]]
+~変数~ [#リザーブタンク:"リザーブタンク大",#リザーブタンク種別:4,#タンク容量:190]
+~移動~ #取り付けを確認
+
+#Message -- 条件外の場合
+~移動~ #次へ
+
+#Message -- リザーブタンク中の所持を確認
+~条件~ [#Item:["リザーブタンク中",">",0],#SysVal:[#リザーブタンク,"<",3]]
+~変数~ [#リザーブタンク:"リザーブタンク中",#リザーブタンク種別:3,#タンク容量:160]
+~移動~ #取り付けを確認
+
+#Message -- 条件外の場合
+~移動~ #次へ
+
+#Message -- リザーブタンク小の所持を確認
+~条件~ [#Item:["リザーブタンク小",">",0],#SysVal:[#リザーブタンク,"<",2]]
+~変数~ [#リザーブタンク:"リザーブタンク小",#リザーブタンク種別:2,#タンク容量:130]
+~移動~ #取り付けを確認
+
+#Message -- 条件外の場合
+~移動~ #次へ
+
+#Message -- 条件外の場合
+~移動~ #取り付け処理終了後
+
+#Message #取り付けを確認
+Oh, you have a ### reserve tank ###.
+How about I install it? 100 stamps.
+~動作~ #showStanpView
+~選択~ [#Yes,#No]
+
+#Message #Yes
+~条件~ [#Item:["白瓦斯屋スタンプ",">=",100]]
+~動作~ [#getItemHiddenly,[["白瓦斯屋スタンプ",(-100)]]]
+~動作~ #resetStanpView
+~動作~ #hide
+~動作~ #startTuning
+~接続~ #取り付け作業終了後
+
+#Message -- スタンプが足りない場合
+You don't have enough stamps.
+
+#Message #取り付け作業終了後
+##リザーブタンク##を取り付けてもらった。
+~動作~ #show
+~動作~ [#setFlag,[#リザーブタンク:##リザーブタンク種別##,#燃料残最大:##タンク容量##]]
+~動作~ #closeStanpView
+~接続~ #取り付け処理終了後
+
+#Message #No
+~移動~ #取り付け処理終了後
+
+#Message #取り付け処理終了後

@@ -1,0 +1,1 @@
+---- 汚水煙管／自室-- Last Update: 98/10/12-- ---------------------------------------------------- 「汚水煙管」をクリックした場合に表示されるDo you want to recover Identity?~選択~ [#Yes,#No]#Message #Yes~動作~ #startChargeJunnou#Message #No~動作~ #MsgDone

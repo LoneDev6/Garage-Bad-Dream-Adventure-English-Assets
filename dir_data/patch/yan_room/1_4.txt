@@ -1,0 +1,1 @@
+---- 順応度の回復（ヤンの部屋）-- Last Update: 98/09/17-- ---------------------------------------------------- メモ：-- 扉を開けてヤンの部屋に入った直後に表示されるDo you want to recover Identity?~選択~ [#Yes,#no]#Message #Yes~動作~ #openToolWindow#Message #No~動作~ #goOut

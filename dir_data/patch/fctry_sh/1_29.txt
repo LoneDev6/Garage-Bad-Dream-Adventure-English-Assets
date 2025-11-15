@@ -1,0 +1,14 @@
+--
+-- 工場／隠し倉庫／手持ちオブジェクト（製造器）
+-- LastUpdate: 98/10/18
+-- --------------------------------------------------
+
+Do you want to pour the $$液体名$$ in?
+~選択~ [#Yes,#No]
+
+#Message #Yes
+You put the $$液体名$$ into the Nitro Maker.
+~動作~ #putObjInto
+
+#Message #No
+~動作~ #MsgDone

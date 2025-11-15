@@ -1,0 +1,96 @@
+--
+-- リー／白瓦斯屋弐号店／表
+-- Last Update: 98/10/20
+-- --------------------------------------------------
+
+-- --------------------キーワード別--------------------
+#Index オープニング
+Dummy: Dumbass, depending on the setting, shows a different message.
+
+#Index プシケ
+#InsPart #初期動作
+Lee: One stamp, $$支払い枚数.全角$$ sheets. Want me to refuel it?
+#InsPart #共通
+
+#Index 実験工房
+#InsPart #初期動作
+Lee: One stamp, $$支払い枚数.全角$$ sheets. Want me to fill it up?
+#InsPart #共通
+
+#Index 楽譜
+#InsPart #初期動作
+Lee: Do you want to refuel?
+#InsPart #共通
+
+#Index 隠された掲示板
+#InsPart #初期動作
+Lee: Stamp, $$支払い枚数.全角$$ sheets.
+#InsPart #共通
+
+#Index プシケの夢日記
+#InsPart #初期動作
+Lee: ...You really want it filled? That’ll be $$支払い枚数.全角$$ stamps...
+#InsPart #共通
+
+#Index 船
+#InsPart #初期動作
+Lee: $$支払い枚数.全角$$ stamps.
+#InsPart #共通
+
+#Index カゲ
+#InsPart #初期動作
+Lee: Will you be refueling here?
+#InsPart #共通
+
+#Index ヤン
+Lee: ..................
+
+
+-- --------------------初期動作--------------------
+#Part #初期動作
+~条件~ [#SysVal:[#event給油の説明,"=",TRUE]]
+-- 「給油方法の説明」を聞いている場合
+~移動~ #説明を聞いている場合
+
+-- 「給油方法の説明」を聞いていない場合
+#Message #給油方法の説明
+Lee: Welcome. Do you want to refuel?
+~選択~ [#Ｙｅｓの場合１,#Ｎｏの場合]
+
+#Message #Ｙｅｓの場合１
+You always have to pay the full stamp amount for a full refuel,
+no matter how much is left in your tank. That's the rule.
+Your head-tank capacity is $$タンク容量.全角$$合 (capacity units),
+so one refuel costs $$支払い枚数.全角$$ stamps.
+Is that okay?
+~移動~ #共通
+
+ -- 「給油方法の説明を聞いている場合
+#Message #説明を聞いている場合
+-- 実際には各キーワード毎のメッセージ
+
+
+-- --------------------共通--------------------
+#Part #共通
+~移動~ #次へ
+
+#Message  #共通
+~動作~ #showStanpView
+~選択~ [#Ｙｅｓの場合２,#Ｎｏの場合]
+#Message  #Ｎｏの場合
+Come back soon.
+
+#Message #Ｙｅｓの場合２
+~条件~ [#Item:["白瓦斯屋スタンプ","<","$$支払い枚数.半角$$"]]
+-- スタンプが足りない場合
+You don't have enough stamps.
+
+-- スタンプが足りている場合
+#Message #給油
+Thanks. Take a left and pump some gas from Liz's belly.
+~動作~ [#paid,$$支払い枚数.半角$$]
+~動作~ #resetStanpView
+~接続~ #次へ
+
+#Message -- 一つ前の続き
+~動作~ #seeLiz
