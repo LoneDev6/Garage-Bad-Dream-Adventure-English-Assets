@@ -88,8 +88,7 @@ You pulled upu$$ƒrƒ“ƒhƒE–¼$$v.
 Looks like there's nothing inside.
 
 -- ----------ŠI‚ª“ü‚Á‚Ä‚¢‚éê‡----------
-#Message #ŠI‚ª“ü‚Á‚Ä‚¢‚éê‡
-There was $$ŠIStr1$$ inside.
+Found $$ŠIStr1$$ total inside.
 ~ƒNƒŠƒbƒN‚È‚µ~ TRUE
 ~“®ì~ [#showPic,"$$ŠI–¼1$$"]
 ~“®ì~ [#getItemHiddenly,[$$ŠIVal1$$]]
@@ -98,7 +97,7 @@ There was $$ŠIStr1$$ inside.
 #Message -- ˆê‚Â‘O‚Ì‘±‚«
 ~ğŒ~ [#Direct:[$$ŠIVal2$$,"<>",#None]]
 ~ƒNƒŠƒbƒN‚È‚µ~ TRUE
-There was $$ŠIStr2$$ inside.
+Found $$ŠIStr2$$ total inside.
 ~“®ì~ [#showPic,"$$ŠI–¼2$$"]
 ~“®ì~ [#getItemHiddenly,[$$ŠIVal2$$]]
 ~Ú‘±~ #Ÿ‚Ö
@@ -106,7 +105,7 @@ There was $$ŠIStr2$$ inside.
 #Message -- ˆê‚Â‘O‚Ì‘±‚«
 ~ğŒ~ [#Direct:[$$ŠIVal3$$,"<>",#None]]
 ~ƒNƒŠƒbƒN‚È‚µ~ TRUE
-There was $$ŠIStr3$$ inside.
+Found $$ŠIStr3$$ total inside.
 ~“®ì~ [#showPic,"$$ŠI–¼3$$"]
 ~“®ì~ [#getItemHiddenly,[$$ŠIVal3$$]]
 ~Ú‘±~ #Ÿ‚Ö
@@ -114,7 +113,7 @@ There was $$ŠIStr3$$ inside.
 #Message -- ˆê‚Â‘O‚Ì‘±‚«
 ~ğŒ~ [#Direct:[$$ŠIVal4$$,"<>",#None]]
 ~ƒNƒŠƒbƒN‚È‚µ~ TRUE
-There was $$ŠIStr4$$ inside.
+Found $$ŠIStr4$$ total inside.
 ~“®ì~ [#showPic,"$$ŠI–¼4$$"]
 ~“®ì~ [#getItemHiddenly,[$$ŠIVal4$$]]
 ~Ú‘±~ #Ÿ‚Ö
@@ -122,7 +121,7 @@ There was $$ŠIStr4$$ inside.
 #Message -- ˆê‚Â‘O‚Ì‘±‚«
 ~ğŒ~ [#Direct:[$$ŠIVal5$$,"<>",#None]]
 ~ƒNƒŠƒbƒN‚È‚µ~ TRUE
-There was $$ŠIStr5$$ inside.
+Found $$ŠIStr5$$ total inside.
 ~“®ì~ [#showPic,"$$ŠI–¼5$$"]
 ~“®ì~ [#getItemHiddenly,[$$ŠIVal5$$]]
 -- ~Ú‘±~ #Ÿ‚Ö
